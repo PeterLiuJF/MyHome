@@ -1,0 +1,16 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "访问被拒绝";
+    var reason = Model;
+    if (string.IsNullOrEmpty(reason))
+    {
+        reason = "您没有权限访问此功能!";
+    }
+}
+<table>
+    <tr>
+        <td><img src="@Url.Content("~/Content/Images/NoPermission.jpg")" /> </td>
+        <td><h2 style="margin-left:20px"> @reason</h2></td>
+    </tr>
+</table>

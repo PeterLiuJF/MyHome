@@ -1,24 +1,50 @@
-﻿body {
+﻿/*通用样式start */
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
 .dl-horizontal dt {
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
+
+.panel .panel-heading{
+    cursor:pointer;
+}
+.common_panel{
+    min-width:800px;
+    margin:10px auto;
+    padding:10px 0;
+    background-color:#eeeeee;
+    border-radius:10px;
+}
+.href_float{
+    float:left;
+    min-width:40%;
+}
+/*通用样式end */
+
+/*注册页面start */
+.regist_body{
+   width:70%;
+   margin:0 auto;
+}
+.regist_body .col-md-2{
+}
+
+.regist_detail{
+    background-color:#e4dfdf;
+    display:none;
+}
+/*注册页面end */

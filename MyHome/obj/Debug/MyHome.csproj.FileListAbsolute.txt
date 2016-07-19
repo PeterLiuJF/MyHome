@@ -67,3 +67,6 @@ E:\myproject\GitHub\MyHome\MyHome\bin\Microsoft.Owin.Security.MicrosoftAccount.x
 E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.csprojResolveAssemblyReference.cache
 E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.dll
 E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.pdb
+E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.Migrations.Initial.resources
+E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.csproj.GenerateResource.Cache
+E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.Migrations.Initial1.resources

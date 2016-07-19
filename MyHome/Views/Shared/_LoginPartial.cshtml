@@ -1,22 +1,21 @@
-﻿@using Microsoft.AspNet.Identity
-@if (Request.IsAuthenticated)
+﻿@using Microsoft.AspNet.Identity;
+@using MyHome.Tools;
+@{
+    var user = Cacher.UserInfoes.SingleOrDefault(u => u.UserName == Context.User.Identity.Name);
+}
+@if (Request.IsAuthenticated && user != null)
 {
-    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
-    {
-    @Html.AntiForgeryToken()
-
     <ul class="nav navbar-nav navbar-right">
         <li>
-            @Html.ActionLink("你好，" + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            @Html.ActionLink("你好，" + User.Identity.GetUserName() + "!", "Details", "UserInfoes", new { id = user.ID }, null)
         </li>
         <li><a href="javascript:document.getElementById('logoutForm').submit()">注销</a></li>
     </ul>
-    }
 }
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("注册", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("登录", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li>@Html.ActionLink("注册", "Create", "UserInfoes")</li>
+        <li>@Html.ActionLink("登录", "Login", "UserInfoes", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>
 }

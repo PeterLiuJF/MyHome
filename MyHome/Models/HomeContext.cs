@@ -9,6 +9,7 @@ namespace MyHome.Models
 {
     public class HomeContext : DbContext
     {
+        public DbSet<UserInfo> UserInfo { get; set; }
         public HomeContext() : base("HomeContext")
         {
 
@@ -18,5 +19,7 @@ namespace MyHome.Models
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<MyHome.Models.AddressInfo> AddressInfoes { get; set; }
     }
 }

@@ -1,0 +1,58 @@
+﻿@using MyHome.ViewModels;
+
+@model UserLoginModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登陆</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+    <!-- Top content -->
+    <div class="top-content">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Login to our site</h3>
+                                <p>Enter your username and password to log on:</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-key"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            @using (Html.BeginForm("Login", "UserInfoes", new { returnUrl = ViewBag.ReturnUrl }, FormMethod.Post,
+             new { @class = "login-form" }))
+                            {
+                            <div class="form-group">
+                                <label class="sr-only" for="UserName">@Html.DisplayNameFor(m=>m.UserName)</label>
+                                @Html.TextBoxFor(m => m.UserName, new { @placeholder = "Username...", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="Password">@Html.DisplayNameFor(m => m.Password)</label>
+                                @Html.PasswordFor(m => m.Password, new { @placeholder = "Password...", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </div>
+                                <button type="submit" class="btn">Sign in!</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/Commom.js")
+</body>
+</html>
