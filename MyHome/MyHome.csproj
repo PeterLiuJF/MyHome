@@ -168,6 +168,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserInfoesController.cs" />
+    <Compile Include="Enums\Attachment.cs" />
     <Compile Include="Enums\Role.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -180,13 +181,20 @@
     <Compile Include="Migrations\201607140658288_Initial1.Designer.cs">
       <DependentUpon>201607140658288_Initial1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608110540555_Initial2.cs" />
+    <Compile Include="Migrations\201608110540555_Initial2.Designer.cs">
+      <DependentUpon>201608110540555_Initial2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AddressInfo.cs" />
+    <Compile Include="Models\AttachmentFile.cs" />
     <Compile Include="Models\HomeContext.cs" />
+    <Compile Include="Models\UserAttachmentFile.cs" />
     <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\AuthorizeRoleAttribute.cs" />
     <Compile Include="Tools\Cacher.cs" />
+    <Compile Include="Tools\DataDictionary.cs" />
     <Compile Include="Tools\Util.cs" />
     <Compile Include="ViewModels\ViewUserInfo.cs" />
   </ItemGroup>
@@ -254,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607140658288_Initial1.resx">
       <DependentUpon>201607140658288_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608110540555_Initial2.resx">
+      <DependentUpon>201608110540555_Initial2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

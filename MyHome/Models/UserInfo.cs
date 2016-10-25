@@ -43,5 +43,7 @@ namespace MyHome.Models
         public virtual AddressInfo Address { get; set; }
         [DisplayName("婚姻")]
         public Marriage Marriage { get; set; }
+
+        public virtual ICollection<UserAttachmentFile> UserAttachmentFiles { get; set; }
     }
 }

@@ -70,3 +70,4 @@ E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.pdb
 E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.Migrations.Initial.resources
 E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.csproj.GenerateResource.Cache
 E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.Migrations.Initial1.resources
+E:\myproject\GitHub\MyHome\MyHome\obj\Debug\MyHome.Migrations.Initial2.resources
